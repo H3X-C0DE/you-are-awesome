@@ -142,7 +142,7 @@ footer span {
   text-transform: uppercase;
 }
 .btnText2 {
-  margin-top: 50px;
+  margin-top: 51px;
   margin-right: -130px;
   color: #fff;
   font-size: 2em;
@@ -399,7 +399,7 @@ footer span {
   background: #738adb;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   .link-a {
     top: 10%;
   }
