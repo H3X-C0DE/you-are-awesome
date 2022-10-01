@@ -8,6 +8,13 @@ function play() {
 
   let swapBackground = document.getElementById("swap");
   swapBackground.classList.toggle("hidden");
+
+  let switchIcon = document.getElementById("crab-icon");
+  if (switchIcon.innerHTML == "🦀") switchIcon.innerHTML = "❌";
+  else if (switchIcon == "❌") switchIcon.innerHTML = "🦀";
+  else {
+    switchIcon.innerHTML = "🦀";
+  }
 }
 
 // copy to clipboard button
