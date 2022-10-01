@@ -1,14 +1,15 @@
+// Entertainment button function
 function play() {
   let audio = document.getElementById("audio");
   if (audio.paused) audio.play();
   else audio.pause();
-
+  //Toggle Crab Gif.
   let crabDance = document.getElementById("crab");
   crabDance.classList.toggle("active");
-
+  // switch background
   let swapBackground = document.getElementById("swap");
   swapBackground.classList.toggle("hidden");
-
+  // switch button icon
   let switchIcon = document.getElementById("crab-icon");
   if (switchIcon.innerHTML == "🦀") switchIcon.innerHTML = "❌";
   else if (switchIcon == "❌") switchIcon.innerHTML = "🦀";
@@ -26,5 +27,5 @@ function CopyToClip() {
 
   navigator.clipboard.writeText(copyText.value);
 
-  alert("Copied Discord ID " + copyText.value + " to your clipboard!");
+  alert("Copied Discord ID: " + copyText.value + " to your clipboard!");
 }

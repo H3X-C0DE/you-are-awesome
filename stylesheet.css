@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: center;
 }
-/* -------------ANIMATED BACKGROUND-------------  */
+/* -------------|Animated Background|-------------  */
 .bg-swap {
   animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #5b62df 50%, #fd0065 50%);
@@ -67,21 +67,7 @@ body {
     transform: translateX(25%);
   }
 }
-
-/*-------------Contact form-------------*/
-
-footer {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-}
-
-footer span {
-  font-weight: 300;
-  font-size: 0.8em;
-}
-
-/* Text animation  */
+/* -----------| Text Animation |----------- */
 
 :root {
   --color-primary: #f6aca2;
@@ -89,103 +75,6 @@ footer span {
   --color-tertiary: #f28b7d;
   --color-quaternary: #f07a6a;
   --color-quinary: #ee6352;
-}
-.btn-box {
-  z-index: 1;
-  transition: all 0.2s;
-}
-
-.btn-box:active {
-  vertical-align: top;
-  padding: 4px 6px 3px;
-}
-
-.button {
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    #fee8d4 11.3%,
-    #fecfb8 41.2%,
-    #ffb9a2 77.8%
-  );
-  margin: 20px auto;
-  width: 200px;
-  height: 50px;
-  overflow: hidden;
-  text-align: center;
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
-  border-radius: 3px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-}
-.button:hover {
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    #79d9ff 11.3%,
-    #fecfb8 41.2%,
-    #ffb9a2 77.8%
-  );
-}
-
-.btnTwo {
-  position: relative;
-  width: 200px;
-  height: 100px;
-  margin-top: -99px;
-  padding-top: 2px;
-  left: -250px;
-  transition: 0.3s;
-}
-.btnText {
-  color: #1e1e1e;
-  transition: 0.3s;
-  margin: 15px;
-  text-transform: uppercase;
-}
-.btnText2 {
-  margin-top: 50px;
-  margin-right: -130px;
-  color: #fff;
-  font-size: 2em;
-}
-.button:hover .btnTwo {
-  /*When hovering over .button change .btnTwo*/
-  left: -130px;
-}
-.button:hover .btnText {
-  /*When hovering over .button change .btnText*/
-  margin-left: 65px;
-}
-.button:active {
-  /*Clicked and held*/
-  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
-}
-
-#crab {
-  position: absolute;
-  top: -15px;
-  left: 50vw;
-}
-.hidden {
-  display: none;
-}
-.active {
-  display: inline-block;
-}
-.link-a {
-  margin: 0;
-  box-sizing: border-box;
-  position: absolute;
-  top: 30%;
-  text-decoration: none;
-}
-.link-a h3 {
-  margin: 0 auto;
-  text-align: center;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: 0.2s ease-in-out;
-  text-decoration: underline;
 }
 
 .text_shadows {
@@ -328,6 +217,104 @@ footer span {
     transform: translate(0px, 0px);
   }
 }
+
+/* -----------| main page button |----------- */
+.btn-box {
+  z-index: 1;
+  transition: all 0.2s;
+}
+
+.btn-box:active {
+  vertical-align: top;
+  padding: 4px 6px 3px;
+}
+
+.button {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    #fee8d4 11.3%,
+    #fecfb8 41.2%,
+    #ffb9a2 77.8%
+  );
+  margin: 20px auto;
+  width: 200px;
+  height: 50px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.button:hover {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    #79d9ff 11.3%,
+    #fecfb8 41.2%,
+    #ffb9a2 77.8%
+  );
+}
+
+.btnTwo {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  margin-top: -99px;
+  padding-top: 2px;
+  left: -250px;
+  transition: 0.3s;
+}
+.btnText {
+  color: #1e1e1e;
+  transition: 0.3s;
+  margin: 15px;
+  text-transform: uppercase;
+}
+.btnText2 {
+  margin-top: 50px;
+  margin-right: -130px;
+  color: #fff;
+  font-size: 2em;
+}
+.button:hover .btnTwo {
+  left: -130px;
+}
+.button:hover .btnText {
+  margin-left: 65px;
+}
+.button:active {
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+}
+/* -----------| Text and Crab |----------- */
+#crab {
+  position: absolute;
+  top: -15px;
+  left: 50vw;
+}
+.hidden {
+  display: none;
+}
+.active {
+  display: inline-block;
+}
+.link-a {
+  margin: 0;
+  box-sizing: border-box;
+  position: absolute;
+  top: 30%;
+  text-decoration: none;
+}
+.link-a h3 {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s ease-in-out;
+  text-decoration: underline;
+}
+
+/* -----------| Social Media |----------- */
 .social-media {
   display: flex;
   flex-direction: row;
@@ -399,6 +386,7 @@ footer span {
 .discord:hover {
   background: #738adb;
 }
+/* -----------| Mobil settings |----------- */
 
 @media only screen and (max-width: 650px) {
   .link-a {
