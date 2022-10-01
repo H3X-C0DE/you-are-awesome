@@ -90,10 +90,14 @@ footer span {
   --color-quaternary: #f07a6a;
   --color-quinary: #ee6352;
 }
+.btn-box {
+  z-index: 1;
+  transition: all 0.2s;
+}
+
 .btn-box:active {
   vertical-align: top;
   padding: 4px 6px 3px;
-  transition: all 0.2s;
 }
 
 .button {
@@ -322,5 +326,98 @@ footer span {
   }
   100% {
     transform: translate(0px, 0px);
+  }
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+.social-media h3 {
+  font-size: 1em;
+  color: #1e1e1e;
+  font-weight: 300;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  flex-wrap: wrap;
+}
+.buttons-container a {
+  text-decoration: none;
+}
+.social-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  transition: 0.2s ease-in-out;
+}
+.social-button i {
+  font-size: 1.3em;
+}
+.social-button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+.twitter,
+.github,
+.reddit,
+.discord {
+  color: #1e1e1e90;
+}
+.twitter:hover {
+  background: #1da1f2;
+}
+
+.github:hover {
+  background: black;
+}
+
+.reddit:hover {
+  background: #ff6314;
+}
+
+.discord {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.discord:hover {
+  background: #738adb;
+}
+
+@media only screen and (max-width: 600px) {
+  .link-a {
+    top: 10%;
+  }
+  .social-media {
+    flex-direction: column;
+    margin-top: 90vh;
+  }
+  .social-media h3 {
+    margin: 0 auto;
+  }
+  .buttons-container {
+    margin: 0 auto;
+  }
+
+  #crab {
+    top: 100%;
+    left: 0vw;
+    z-index: 0;
+    width: 100%;
   }
 }
