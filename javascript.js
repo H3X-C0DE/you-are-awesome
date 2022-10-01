@@ -2,8 +2,12 @@ function play() {
   let audio = document.getElementById("audio");
   if (audio.paused) audio.play();
   else audio.pause();
-  let element = document.getElementById("crab");
-  element.classList.toggle("active");
+
+  let crabDance = document.getElementById("crab");
+  crabDance.classList.toggle("active");
+
+  let swapBackground = document.getElementById("swap");
+  swapBackground.classList.toggle("hidden");
 }
 
 const toggleNavbarVisibility = () => {

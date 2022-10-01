@@ -15,10 +15,18 @@
   <body>
     <div id="top-home" class="main-container">
       <audio loop id="audio" src="/assets/crab-rave.mp3"></audio>
-      <a class="link-a" href="#" onclick="play()">
+      <a class="link-a" href="#">
         <div class="content">
           <h2 class="text_shadows">you are awesome!</h2>
-          <h3 class="">Rejoice</h3>
+
+          <div class="btn-box" onclick="play()">
+            <div class="button">
+              <p class="btnText">rejoice</p>
+              <div class="btnTwo">
+                <p class="btnText2">🦀</p>
+              </div>
+            </div>
+          </div>
           <img
             id="crab"
             class="hidden"
@@ -28,9 +36,16 @@
         </div>
       </a>
     </div>
-    <div class="bg"></div>
-    <div class="bg bg2"></div>
-    <div div class="bg bg3"></div>
+    <div>
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
+    </div>
+    <div id="swap" class="hidden">
+      <div class="bg-swap"></div>
+      <div class="bg-swap bg2"></div>
+      <div class="bg-swap bg3"></div>
+    </div>
 
     <script src="/javascript.js"></script>
     <script
