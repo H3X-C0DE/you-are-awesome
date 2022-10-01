@@ -415,10 +415,10 @@ footer span {
     margin: 0 auto;
   }
 
-  .twitter:focus,
-  .github:focus,
-  .reddit:focus,
-  .discord:focus {
+  .twitter:hover,
+  .github:hover,
+  .reddit:hover,
+  .discord:hover {
     color: #1e1e1e90;
     background: none;
     box-shadow: none;
