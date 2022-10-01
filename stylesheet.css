@@ -35,6 +35,7 @@ body {
   z-index: -1;
 }
 .bg {
+  animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(
     43deg,
     #4158d0 0%,
