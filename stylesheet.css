@@ -142,7 +142,7 @@ footer span {
   text-transform: uppercase;
 }
 .btnText2 {
-  margin-top: 51px;
+  margin-top: 50px;
   margin-right: -130px;
   color: #fff;
   font-size: 2em;
@@ -374,6 +374,7 @@ footer span {
 .discord {
   color: #1e1e1e90;
 }
+
 .twitter:hover {
   background: #1da1f2;
 }
@@ -399,7 +400,7 @@ footer span {
   background: #738adb;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 650px) {
   .link-a {
     top: 10%;
   }
@@ -412,6 +413,15 @@ footer span {
   }
   .buttons-container {
     margin: 0 auto;
+  }
+
+  .twitter:focus,
+  .github:focus,
+  .reddit:focus,
+  .discord:focus {
+    color: #1e1e1e90;
+    background: none;
+    box-shadow: none;
   }
 
   #crab {
