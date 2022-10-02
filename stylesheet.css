@@ -353,7 +353,6 @@ body {
 }
 .social-button:hover {
   cursor: pointer;
-  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.1);
   color: white;
 }
 .twitter,
@@ -361,18 +360,6 @@ body {
 .reddit,
 .discord {
   color: #1e1e1e90;
-}
-
-.twitter:hover {
-  background: #1da1f2;
-}
-
-.github:hover {
-  background: black;
-}
-
-.reddit:hover {
-  background: #ff6314;
 }
 
 .discord {
@@ -384,9 +371,6 @@ body {
   outline: inherit;
 }
 
-.discord:hover {
-  background: #738adb;
-}
 /* -----------| Mobil settings |----------- */
 
 @media only screen and (max-width: 650px) {
