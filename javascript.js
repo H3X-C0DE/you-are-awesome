@@ -3,13 +3,23 @@ function play() {
   let audio = document.getElementById("audio");
   if (audio.paused) audio.play();
   else audio.pause();
+
   //Toggle Crab Gif.
   let crabDance = document.getElementById("crab");
   crabDance.classList.toggle("active");
+
   // switch background
   let swapBackground = document.getElementById("swap");
   swapBackground.classList.toggle("hidden");
-  // switch button icon
+
+  // switch button text
+  let textSwitch = document.getElementById("text-switch");
+  if (textSwitch.innerHTML == "rejoice") textSwitch.innerHTML = "Stop";
+  else if (textSwitch == "Stop") textSwitch.innerHTML = "rejoice";
+  else {
+    textSwitch.innerHTML = "rejoice";
+  }
+
   let switchIcon = document.getElementById("crab-icon");
   if (switchIcon.innerHTML == "🦀") switchIcon.innerHTML = "❌";
   else if (switchIcon == "❌") switchIcon.innerHTML = "🦀";
